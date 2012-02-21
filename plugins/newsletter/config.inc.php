@@ -51,6 +51,8 @@ function rex_newsletter_sendmail($userinfo, $mail_from_email, $mail_from_name, $
 			$mail->Body = str_replace( "###".strtoupper($k)."###",$v,$mail->Body);
 			$mail->Body = str_replace( "+++".$k."+++",urlencode($v),$mail->Body);
 			$mail->Body = str_replace( "+++".strtoupper($k)."+++",urlencode($v),$mail->Body);
+			$mail->Body = str_replace( "***".$k."***",urlencode($v),$mail->Body);
+			$mail->Body = str_replace( "***".strtoupper($k)."***",urlencode($v),$mail->Body);
 			$mail->Subject = str_replace( "###".$k."###",$v,$mail->Subject);
 			$mail->Subject = str_replace( "###".strtoupper($k)."###",$v,$mail->Subject);
 			$mail->Subject = str_replace( "+++".$k."+++",urlencode($v),$mail->Subject);
@@ -59,6 +61,8 @@ function rex_newsletter_sendmail($userinfo, $mail_from_email, $mail_from_name, $
 			$mail->AltBody = str_replace( "###".strtoupper($k)."###",$v,$mail->AltBody);
 			$mail->AltBody = str_replace( "+++".$k."+++",urlencode($v),$mail->AltBody);
 			$mail->AltBody = str_replace( "+++".strtoupper($k)."+++",urlencode($v),$mail->AltBody);
+			$mail->AltBody = str_replace( "***".$k."***",urlencode($v),$mail->AltBody);
+			$mail->AltBody = str_replace( "***".strtoupper($k)."***",urlencode($v),$mail->AltBody);
 		}
 	}else
 	{
@@ -69,6 +73,8 @@ function rex_newsletter_sendmail($userinfo, $mail_from_email, $mail_from_name, $
 			$mail->Body = str_replace( "###".strtoupper($k)."###",$v,$mail->Body);
 			$mail->Body = str_replace( "+++".$k."+++",urlencode($v),$mail->Body);
 			$mail->Body = str_replace( "+++".strtoupper($k)."+++",urlencode($v),$mail->Body);
+			$mail->Body = str_replace( "***".$k."***",urlencode($v),$mail->Body);
+			$mail->Body = str_replace( "***".strtoupper($k)."***",urlencode($v),$mail->Body);
 			$mail->Subject = str_replace( "###".$k."###",$v,$mail->Subject);
 			$mail->Subject = str_replace( "###".strtoupper($k)."###",$v,$mail->Subject);
 			$mail->Subject = str_replace( "+++".$k."+++",urlencode($v),$mail->Subject);
